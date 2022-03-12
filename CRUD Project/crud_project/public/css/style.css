@@ -1,0 +1,30 @@
+.bg{
+	background-color: #DEDFDF;
+}
+
+.col img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text], input[type=email], input[type=password]{
+	border-radius: 50px;
+}
+
+.div_form{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+   	border-radius: 20px;
+}
+
+.btn-outline-secondary, .btn-outline-success, .btn-outline-info{
+    border-radius: 50px;
+    min-width: 200px;
+}
