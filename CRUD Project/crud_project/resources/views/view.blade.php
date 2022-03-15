@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mehedi H.</title>
-	{{-- Datepicker CSS --}}
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
-    {{-- Bootstrap CSS --}}
-	<link rel="stylesheet" href="{{ asset('/css/bootstrap.css') }}">
-    {{-- Custom CSS --}}
-	<link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+	@include('link.starting')
 </head>
 <body>
 
@@ -47,17 +39,6 @@
         <div class="text-end"><a href="{{ url("/") }}" class="btn btn-outline-info">New Registration</a></div>
 	</section>
 
-{{-- Datepicker JS --}}
-<script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
-{{-- Bootstrap JS --}}
-<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
-<script type="text/javascript">
-const elems = document.querySelectorAll('.datepicker_input');
-for (const elem of elems) {
-  const datepicker = new Datepicker(elem, {
-    autohide: true
-  });
-}     
-</script>
+	@include('link.ending')
 </body>
 </html>
